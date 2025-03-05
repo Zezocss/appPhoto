@@ -1,4 +1,7 @@
-﻿namespace AppFotos.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AppFotos.Models
 {
 
     /// <summary>
@@ -39,6 +42,21 @@
         }
 
 
+        /// <summary>
+        /// fOREIGN KEY para referenciar o comprador da foto
+        /// </summary>
+        [ForeignKey(nameof(Comprador))]
+        public int CompradorFK { get; set; }
+        /// <summary>
+        /// Foreign Key para referenciar o comprador da fotografia
+        /// </summary>
+        public Utilizadores Comprador { get; set; }
+
+
+        /// <summary>
+        /// Lista de 'compras' que compraram a fotografia
+        /// </summary>
+        public ICollection<Fotografias> ListaFotografiasCompradas { get; set; }
 
     }
 }

@@ -18,5 +18,17 @@
         
         public string Categoria { get; set;}
 
+
+
+
+        /* ***********************
+    * Definicao dos relacionamentos 
+    * *********************** */
+
+
+        /// <summary>
+        /// Lista das Fotografias associadas a uma foto
+        /// </summary>
+        public ICollection<Fotografias> ListaFotografias { get; set; }
     }
 }

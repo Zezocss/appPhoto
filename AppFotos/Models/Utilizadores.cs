@@ -47,6 +47,22 @@
         /// Número de Telemovel do Utilizador
         /// </summary>
         public string Telemovel { get; set; }
+
+        /// <summary>
+        /// Lista das fotos que sao propriedade do utilizador
+        /// </summary>
+        public ICollection<Fotografias> ListaFotos { get; set; }
+
+        /// <summary>
+        /// Lista dos gostos de fotografias do utilizador
+        /// </summary>
+        public ICollection<Gostos> ListaGostos { get; set; }
+
+        /// <summary>
+        /// Lista de compras de fotografias do utilizador
+        /// </summary>
+        public ICollection<Compras> ListaCompras { get; set; }
+
     }
 
 }
