@@ -7,5 +7,13 @@
     /// </summary>
     public class Gostos
     {
+
+
+        /// <summary>
+        /// Data em que o utilizador deu gosto numa fotografia 
+        /// </summary>
+        public DateTime Data { get; set; }
+
+
     }
 }
