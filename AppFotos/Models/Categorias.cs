@@ -15,6 +15,7 @@
         /// <summary>
         /// Nome da Categoria que sera associada as fotos
         /// </summary>
+        
         public string Categoria { get; set;}
 
     }
